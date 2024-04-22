@@ -1,14 +1,15 @@
 package model;
 
-public class Professor extends Pessoa{
+public class Professor extends Pessoa {
+
     private double salario;
     private String titulo;
-    
-    public Professor(){
-        this(0, "",0,0.0,"");
+
+    public Professor() {
+        this(0, "", 0, 0.0, "");
     }
-    
-    public Professor(int id, String nome, int idade, double salario, String titulo ) {
+
+    public Professor(int id, String nome, int idade, double salario, String titulo) {
         super(id, nome, idade);
         this.salario = salario;
         this.titulo = titulo;

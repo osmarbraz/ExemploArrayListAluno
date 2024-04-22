@@ -37,6 +37,7 @@ public class Principal {
                     listasimples.add(alunonovo);
                     System.out.println("Aluno inserido com sucesso!");
                     break;
+
                 case 2:
                     int chaveProcura = Integer.parseInt(JOptionPane.showInputDialog("Digite o id de um aluno a ser consultado:"));
                     //Procura a posição do id do aluno
@@ -89,7 +90,7 @@ public class Principal {
                     break;
 
                 case 4:
-                    int chaveExclusao = Integer.parseInt(JOptionPane.showInputDialog("Digite o id de um aluno a ser excluído"));
+                    int chaveExclusao = Integer.parseInt(JOptionPane.showInputDialog("Digite o id de um aluno a ser excluído:"));
                     int posicaoExclusao = -1;
                     for (int i = 0; i < listasimples.size(); i++) {
                         if (listasimples.get(i).getId() == chaveExclusao) {
@@ -115,6 +116,7 @@ public class Principal {
                         System.out.println("  Fase :" + listasimples.get(i).getFase());
                     }
                     break;
+
                 case 6:
                     System.out.println("Classificado os alunos pelo nome");
                     Collections.sort(listasimples, new Comparator() {
@@ -135,7 +137,7 @@ public class Principal {
                     System.out.println(
                             "Opção inválida");
                     break;
-            }
-        }
-    }
-}
+            }//Fim switch
+        }//Fim while
+    }//Fim main
+}//Fim classe

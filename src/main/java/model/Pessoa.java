@@ -1,12 +1,13 @@
 package model;
 
 public class Pessoa {
+
     private int id;
     private String nome;
     private int idade;
-    
-    public Pessoa(){
-        this(0,"",0);
+
+    public Pessoa() {
+        this(0, "", 0);
     }
 
     public Pessoa(int id, String nome, int idade) {
@@ -21,8 +22,8 @@ public class Pessoa {
 
     public void setId(int id) {
         this.id = id;
-    }    
-    
+    }
+
     public String getNome() {
         return nome;
     }
@@ -37,7 +38,7 @@ public class Pessoa {
 
     public void setIdade(int idade) {
         this.idade = idade;
-    } 
+    }
 
     @Override
     public String toString() {
