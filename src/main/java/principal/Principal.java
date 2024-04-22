@@ -133,7 +133,7 @@ public class Principal {
                     break;
                 default:
                     System.out.println(
-                            "Opcao invalida");
+                            "Opção inválida");
                     break;
             }
         }
