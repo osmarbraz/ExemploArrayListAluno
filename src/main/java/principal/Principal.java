@@ -13,7 +13,7 @@ public class Principal {
         ArrayList<Aluno> listasimples = new ArrayList<>();
 
         int opcao = -1;
-        while (opcao != 9) {
+        do {
             opcao = Integer.parseInt(JOptionPane.showInputDialog("##Menu do Cadastro de Aluno##\n"
                     + "1 - Criar (Create)\n"
                     + "2 - Recuperação (Retrive)\n"
@@ -138,6 +138,6 @@ public class Principal {
                             "Opção inválida");
                     break;
             }//Fim switch
-        }//Fim while
+        } while (opcao != 9); //Fim while
     }//Fim main
 }//Fim classe
